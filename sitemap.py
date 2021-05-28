@@ -2,8 +2,8 @@ import re
 import urllib
 import requests
 
-page = 'https://colsrch.cn/page-sitemap.xml'
-post = 'https://colsrch.cn/post-sitemap.xml'
+page = 'http://www.czsyyy.cn/sitemap.xml'
+post = 'http://www.czsyyy.cn/sitemap.xml'
 
 html = urllib.request.urlopen(page).read().decode('utf-8')
 result = re.findall(re.compile(r'(?<=<loc>).*?(?=</loc>)'), html)
